@@ -1,3 +1,62 @@
+function basic(){
+    confetti({
+    particleCount: 1000,
+    spread: 70,
+    origin: { y: 0.6 },
+    shapes: ["emoji"],
+    shapeOptions: {
+      emoji: {
+        value: ["🍆", "🍑"]
+      }}});
+  }
+  
+  function randomDirection(){
+   confetti({
+    angle: randomInRange(55, 125),
+    spread: randomInRange(50, 70),
+    particleCount: randomInRange(50, 100),
+    origin: { y: 0.6 }
+  }); 
+  }
+  
+  function makeItRain() {
+    document.getElementById("makeItRain").disabled = true;
+    var end = Date.now() + (2 * 1000);
+  
+  // go Buckeyes!
+  var colors = ['#bb0000', '#ffffff'];
+  
+  function frame() {
+    confetti({
+      particleCount: 2,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: colors
+    });
+    confetti({
+      particleCount: 2,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: colors
+    });
+  
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+    else {
+      document.getElementById("makeItRain").disabled = false;
+    }
+  };
+    frame();
+  }
+  
+  function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+
 var data = [
     //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
     { id: '', color: '#2EB67D', text: 'SEX'},
@@ -177,6 +236,17 @@ var data = [
     this.$el.find('.button').on('click', $.proxy(this.spin,this));
   }
   
+  function message(){
+    alert("You won: Invitation to Casa Nova");
+  }
+
+  function win(callback){
+    basic();
+    setTimeout(() => {
+        // Animation completed
+        callback();
+      }, 1500);;
+  }
   
   var spinner;
   $(window).ready(function(){
@@ -186,6 +256,10 @@ var data = [
     spinner.bindEvents();
     
     spinner.on('spin:start', function(r){ console.log('spin start!') });
-    spinner.on('spin:end', function(r){ console.log('spin end! -->'+ r._index) });
+    spinner.on('spin:end', function(r){ 
+        console.log('spin end! -->'+ r._index);
+        win(message);
+    });
+    
     
   })
