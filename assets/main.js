@@ -1,17 +1,17 @@
 var data = [
     //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
-    { id: '', color: '#2EB67D', text: '1'},
-    { id: '', color: '#ECB22E', text: '2' },
-    { id: '', color: '#2EB67D', text: '3' },
-    { id: '', color: '#ECB22E', text: '4' },
-    { id: '', color: '#2EB67D', text: '5' },
-    { id: '', color: '#ECB22E', text: '6' },
-    { id: '', color: '#2EB67D', text: '7' },
-    { id: '', color: '#ECB22E', text: '8' },
-    { id: '', color: '#2EB67D', text: '9' },
-    { id: '', color: '#ECB22E', text: '10' },
-    { id: '', color: '#2EB67D', text: '11' },
-    { id: '', color: '#FCCD48', text: '12' }
+    { id: '', color: '#2EB67D', text: 'SEX'},
+    { id: '', color: '#ECB22E', text: 'SEX' },
+    { id: '', color: '#2EB67D', text: 'SEX' },
+    { id: '', color: '#ECB22E', text: 'SEX' },
+    { id: '', color: '#2EB67D', text: 'SEX' },
+    { id: '', color: '#ECB22E', text: 'SEX' },
+    { id: '', color: '#2EB67D', text: 'SEX' },
+    { id: '', color: '#ECB22E', text: 'SEX' },
+    { id: '', color: '#2EB67D', text: 'SEX' },
+    { id: '', color: '#ECB22E', text: 'SEX' },
+    { id: '', color: '#2EB67D', text: 'SEX' },
+    { id: '', color: '#FCCD48', text: 'SEX' }
   ];
   
   var RouletteWheel = function(el, items){
