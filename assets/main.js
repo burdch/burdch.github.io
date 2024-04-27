@@ -245,7 +245,7 @@ var data = [
     setTimeout(() => {
         // Animation completed
         callback();
-      }, 1500);;
+      }, 1200);;
   }
   
   var spinner;
