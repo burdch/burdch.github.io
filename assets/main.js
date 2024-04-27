@@ -61,7 +61,7 @@ var data = [
       //easing: [20, 7],
       //easing: [200, 20],
       easing: 'easeOutQuint',
-      duration: 1000,
+      duration: 10000,
       begin: $.proxy(_onAnimationBegin,this),
       complete: $.proxy(_onAnimationComplete,this)
     });
