@@ -59,18 +59,18 @@ function basic(){
 
 var data = [
     //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
-    { id: '', color: '#2EB67D', text: 'SEX'},
-    { id: '', color: '#ECB22E', text: 'SEX' },
-    { id: '', color: '#2EB67D', text: 'SEX' },
-    { id: '', color: '#ECB22E', text: 'SEX' },
-    { id: '', color: '#2EB67D', text: 'SEX' },
-    { id: '', color: '#ECB22E', text: 'SEX' },
-    { id: '', color: '#2EB67D', text: 'SEX' },
-    { id: '', color: '#ECB22E', text: 'SEX' },
-    { id: '', color: '#2EB67D', text: 'SEX' },
-    { id: '', color: '#ECB22E', text: 'SEX' },
-    { id: '', color: '#2EB67D', text: 'SEX' },
-    { id: '', color: '#FCCD48', text: 'SEX' }
+    { id: '', color: '#2EB67D', text: '🎁'},
+    { id: '', color: '#ECB22E', text: '🎁' },
+    { id: '', color: '#2EB67D', text: '🎁' },
+    { id: '', color: '#ECB22E', text: '🎁' },
+    { id: '', color: '#2EB67D', text: '🎁' },
+    { id: '', color: '#ECB22E', text: '🎁' },
+    { id: '', color: '#2EB67D', text: '🎁' },
+    { id: '', color: '#ECB22E', text: '🎁' },
+    { id: '', color: '#2EB67D', text: '🎁' },
+    { id: '', color: '#ECB22E', text: '🎁' },
+    { id: '', color: '#2EB67D', text: '🎁' },
+    { id: '', color: '#FCCD48', text: '🎁' }
   ];
   
   var RouletteWheel = function(el, items){
@@ -120,7 +120,7 @@ var data = [
       //easing: [20, 7],
       //easing: [200, 20],
       easing: 'easeOutQuint',
-      duration: 10000,
+      duration: 8000,
       begin: $.proxy(_onAnimationBegin,this),
       complete: $.proxy(_onAnimationComplete,this)
     });
@@ -237,7 +237,7 @@ var data = [
   }
   
   function message(){
-    alert("You won: Invitation to Casa Nova");
+    alert("You won: A Kiss with Chris");
   }
 
   function win(callback){
