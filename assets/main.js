@@ -1,9 +1,13 @@
 var wins = Array(
-  "Anal with Sven",
-  "Limo with Timo",
+  "Tell me your favorite position in bed",
+  "Kis your best friend on the cheek",
   "Selfie with Mirco",
   "Invitation to our house party next week. (Bring a hot friend)",
-  "One free booty clap on Tobi"
+  "One free booty clap on Tobi",
+  "Say who is the best looking guy in our group",
+  "Share your best pick-up line",
+  "Drink from your beer, if you think someone from our group is hot",
+  "Drink from your beer, if you ever had a One Night Stand"
 );
 
 
