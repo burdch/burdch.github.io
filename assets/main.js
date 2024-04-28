@@ -1,7 +1,7 @@
 var wins = Array(
   "Anal with Sven",
   "Limo with Timo",
-  "We take a selfie",
+  "Selfie with Mirco",
   "Invitation to our house party next week. (Bring a hot friend)",
   "One free booty clap on Tobi"
 );
@@ -242,7 +242,7 @@ function message() {
   let response = wins[Math.floor(Math.random() * wins.length)];
   console.log(response);
   Notiflix.Confirm.show(
-    '"🎉WE HAVE A WINNER🎉',
+    '🎉You won🎉',
     response,
     'Well okay then',
   );
