@@ -1,13 +1,28 @@
 var wins = Array(
   "Tell me your favorite position in bed",
-  "Kis your best friend on the cheek",
+  "Kiss your best friend on the cheek",
   "Selfie with Mirco",
   "Invitation to our house party next week. (Bring a hot friend)",
   "One free booty clap on Tobi",
   "Say who is the best looking guy in our group",
   "Share your best pick-up line",
   "Drink from your beer, if you think someone from our group is hot",
-  "Drink from your beer, if you ever had a One Night Stand"
+  "Drink from your beer, if you ever had a One Night Stand",
+  "Show us your sexiest dance move",
+  "Share your most embarrassing date story",
+  "Give a shoutout to your crush in the room",
+  "Swap clothes with someone of the opposite gender for the next hour",
+  "Take a selfie with the person you'd most like to kiss tonight",
+  "Tell us your wildest fantasy (keep it PG-13)",
+  "Whisper the name of your celebrity crush to the person next to you",
+  "Do an impression of your favorite movie character",
+  "Reveal the most outrageous place you've ever had a kiss",
+  "Confess your guilty pleasure song and sing a line for us",
+  "Send a flirty text to your last saved contact",
+  "Give a lap dance to the person sitting closest to you",
+  "Share your most embarrassing childhood nickname",
+  "Tell us about your worst pickup line attempt",
+  "Show us your best seductive face"
 );
 
 
