@@ -46,7 +46,12 @@ var wins = Array(
   "Erzähle die Geschichte deines schlimmsten Dates",
   "Sag, mit wem du am liebsten auf einer einsamen Insel gestrandet wärst",
   "Was ist deine most overrated Sex Position?",
-  "Teile deine beste Anmache und benutze sie bei Timo",
+  "Benutze deinen besten Anmachspruch bei Timo",
+  "Benutze deinen besten Anmachspruch bei Ferdi",
+  "Benutze deinen besten Anmachspruch bei Sven",
+  "Benutze deinen besten Anmachspruch bei Malte",
+  "Benutze deinen besten Anmachspruch bei Tobi",
+  "Benutze deinen besten Anmachspruch bei Christian",
   "Stimm einen Malle-Hit an"
 );
 
