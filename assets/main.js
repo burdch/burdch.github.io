@@ -46,7 +46,8 @@ var wins = Array(
   "Erzähle die Geschichte deines schlimmsten Dates",
   "Sag, mit wem du am liebsten auf einer einsamen Insel gestrandet wärst",
   "Was ist deine most overrated Sex Position?",
-  "Teile deine beste Anmache und benutze sie bei Timo"
+  "Teile deine beste Anmache und benutze sie bei Timo",
+  "Stimm einen Malle-Hit an"
 );
 
 
