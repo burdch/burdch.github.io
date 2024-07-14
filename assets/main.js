@@ -108,16 +108,20 @@ var data = [
   //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
   { id: '', color: '#2EB67D', text: '🍆' },
   { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '〶' },
-  { id: '', color: '#ECB22E', text: '🎊' },
-  { id: '', color: '#2EB67D', text: '🎊' },
-  { id: '', color: '#ECB22E', text: '🎊' },
-  { id: '', color: '#2EB67D', text: '🎊' },
-  { id: '', color: '#ECB22E', text: '🎁' },
-  { id: '', color: '#2EB67D', text: '🎁' },
-  { id: '', color: '#ECB22E', text: '🎁' },
-  { id: '', color: '#2EB67D', text: '🎁' },
-  { id: '', color: '#FCCD48', text: '🎁' }
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' },
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' },
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' },
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' },
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' },
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' },
+  { id: '', color: '#2EB67D', text: '🍆' },
+  { id: '', color: '#222222', text: '🍑' }
 ];
 
 var RouletteWheel = function (el, items) {
