@@ -105,24 +105,24 @@ function randomInRange(min, max) {
 
 
 var data = [
-  //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' },
-  { id: '', color: '#2EB67D', text: '🍆' },
-  { id: '', color: '#222222', text: '🍑' }
+  { id: '', color: '#FF0000', text: '🍆' }, // Red
+  { id: '', color: '#FF4000', text: '🍑' }, // Orange-Red
+  { id: '', color: '#FF8000', text: '🍆' }, // Orange
+  { id: '', color: '#FFBF00', text: '🍑' }, // Golden Yellow
+  { id: '', color: '#FFFF00', text: '🍆' }, // Yellow
+  { id: '', color: '#BFFF00', text: '🍑' }, // Lime Green
+  { id: '', color: '#80FF00', text: '🍆' }, // Yellow-Green
+  { id: '', color: '#40FF00', text: '🍑' }, // Green
+  { id: '', color: '#00FF00', text: '🍆' }, // Bright Green
+  { id: '', color: '#00FF80', text: '🍑' }, // Spring Green
+  { id: '', color: '#00FFBF', text: '🍆' }, // Turquoise
+  { id: '', color: '#00FFFF', text: '🍑' }, // Cyan
+  { id: '', color: '#00BFFF', text: '🍆' }, // Deep Sky Blue
+  { id: '', color: '#0080FF', text: '🍑' }, // Dodger Blue
+  { id: '', color: '#0040FF', text: '🍆' }, // Royal Blue
+  { id: '', color: '#0000FF', text: '🍑' }  // Blue
 ];
+
 
 var RouletteWheel = function (el, items) {
   this.$el = $(el);
