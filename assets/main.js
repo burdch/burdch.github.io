@@ -291,9 +291,9 @@ function message() {
   let response = wins[Math.floor(Math.random() * wins.length)];
   console.log(response);
   Notiflix.Confirm.show(
-    '🎉You won🎉',
+    '🎉DU HAST GEWONNEN🎉',
     response,
-    'Well okay then',
+    'Gerne',
   );
   // alert("🎉WE HAVE A WINNER🎉\nPrize: " + response);
 }
