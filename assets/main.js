@@ -39,7 +39,6 @@ var wins = Array(
   "Gib Christian ein unvergessliches Kompliment",
   "Lass Ferdi einen Spitznamen für dich aussuchen, den du für den Rest der Nacht verwenden musst",
   "Fordere jemanden zu einem Daumenkrieg heraus, Verlierer trinkt",
-  "Lass Timo sich eine Mutprobe für dich ausdenken",
   "Nimm einen Shot, wenn du jemals nackt baden warst",
   "Zeige dein bestes Duckface",
   "Flüstere Sven ein Geheimnis zu",
@@ -47,8 +46,7 @@ var wins = Array(
   "Erzähle die Geschichte deines schlimmsten Dates",
   "Sag, mit wem du am liebsten auf einer einsamen Insel gestrandet wärst",
   "Was ist deine most overrated Sex Position?",
-  "Teile deine beste Anmache und benutze sie bei Timo",
-  "Lass Christian deinen zweiten Vornamen raten",
+  "Teile deine beste Anmache und benutze sie bei Timo"
 );
 
 
