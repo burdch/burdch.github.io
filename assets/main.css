@@ -184,6 +184,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #password-dialog input {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 #main-content {
