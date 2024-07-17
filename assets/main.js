@@ -1,14 +1,18 @@
-const correctPassword = 'malle';  //Wenn du das passwort findest bist du ein krasser Hacker. Glückwunsch. 
+const correctPassword = 'malle';  //Wenn du das Passwort findest bist du ein krasser Hacker. Glückwunsch. 
+
+var participants = Array(
+  "Timo",
+  "Tobi",
+  "Male",
+  "Ferdi",
+  "Chris",
+  "Sven",
+)
 
 var wins = Array(
   "Erzähle mir deine Lieblingsposition im Bett",
   "Küsse deinen besten Freund auf die Wange",
-  "Mach ein Selfie mit Tobi",
   "Einladung zu unserer Hausparty nächste Woche. (Bring eine heiße Freundin mit)",
-  "Gib Tobi einen Klaps auf den Arsch",
-  "Gib Sven einen Klaps auf den Arsch",
-  "Gib Christian einen Klaps auf den Arsch",
-  "Gib Timo einen Klaps auf den Arsch",
   "Sag, wer der bestaussehende Typ in unserer Gruppe ist",
   "Was ist dein bester Anmachspruch?",
   "Was ist dein schlechtester Anmachspruch?",
@@ -22,41 +26,25 @@ var wins = Array(
   "Schicke eine flirtende Nachricht an deinen zuletzt gespeicherten Kontakt",
   "Zeige uns dein verführerischstes Gesicht",
   "Nimm einen Shot, wenn du jemals jemanden auf dieser Party geküsst hast",
-  "Lass Christian dir ein temporäres Tattoo mit einem Marker geben",
-  "Mach ein Selfie mit Ferdi mit deinem Handy",
-  "Mach ein Selfie mit Malte mit deinem Handy",
-  "Mach ein Selfie mit Christian mit deinem Handy",
-  "Mach ein Selfie mit Sven mit deinem Handy",
-  "Mach ein Selfie mit Timo mit deinem Handy",
-  "Mach ein Selfie mit Tobi mit deinem Handy",
   "Mach ein Selfie mit dir und uns mit deinem Handy",
-  "Sag etwas Nettes über Malte",
-  "Sag etwas Nettes über Tobi",
-  "Sag etwas Nettes über Christian",
-  "Sag etwas Nettes über Ferdi",
-  "Sag etwas Nettes über Sven",
-  "Sag etwas Nettes über Timo",
   "Lass Tobi etwas auf deinen Arm zeichnen",
   "Poste ein lustiges Selfie auf deiner Instagram-Story mit Sven",
   "Gib Christian ein unvergessliches Kompliment",
-  "Lass Ferdi einen Spitznamen für dich aussuchen, den du für den Rest der Nacht verwenden musst",
   "Fordere jemanden zu einem Daumenkrieg heraus, Verlierer trinkt",
   "Nimm einen Shot, wenn du jemals nackt baden warst",
   "Zeige dein bestes Duckface",
   "Flüstere Sven ein Geheimnis zu",
-  "Lass Ferdi ein Emoji aussuchen, das du in deiner nächsten Nachricht verwenden musst",
   "Erzähle die Geschichte deines schlimmsten Dates",
   "Sag, mit wem du am liebsten auf einer einsamen Insel gestrandet wärst",
-  "Was ist deine most overrated Sex Position?",
-  "Benutze deinen besten Anmachspruch bei Timo",
-  "Benutze deinen besten Anmachspruch bei Ferdi",
-  "Benutze deinen besten Anmachspruch bei Sven",
-  "Benutze deinen besten Anmachspruch bei Malte",
-  "Benutze deinen besten Anmachspruch bei Tobi",
-  "Benutze deinen besten Anmachspruch bei Christian",
-  "Stimm einen Malle-Hit an"
+  "Stimm einen Malle-Hit an",
+  "Benutze deinen besten Anmachspruch bei {name}",
+  "Lass {name} ein Emoji aussuchen, das du in deiner nächsten Nachricht verwenden musst",
+  "Sag etwas Nettes über {name}",
+  "Mach ein Selfie mit {name} mit deinem Handy",
+  "Lass {name} dir ein temporäres Tattoo mit einem Marker geben",
+  "Gib {name} einen Klaps auf den Arsch",
+  "Lass {name} einen Spitznamen für dich aussuchen, den du für den Rest der Nacht verwenden musst",
 );
-
 
 function basic(partCount) {
   confetti({
@@ -293,8 +281,19 @@ RouletteWheel.prototype.bindEvents = function () {
   this.$el.find('.button').on('click', $.proxy(this.spin, this));
 }
 
+function checkResponseForNameAndSubstitute(win){
+  if (win.includes("{name}")) {
+    const randomName = participants[Math.floor(Math.random() * participants.length)];
+    const resultString = win.replace("{name}", randomName);
+    return resultString;
+  }
+  // If no {name} tag is found, return the inputString unchanged
+  return win;
+}
+
 function message() {
   let response = wins[Math.floor(Math.random() * wins.length)];
+  response = checkResponseForNameAndSubstitute(response);
   console.log(response);
   Notiflix.Confirm.show(
     '🎉DU HAST GEWONNEN🎉',
