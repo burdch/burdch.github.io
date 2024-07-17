@@ -1,3 +1,5 @@
+const correctPassword = 'malle';  //Wenn du das passwort findest bist du ein krasser Hacker. Glückwunsch. 
+
 var wins = Array(
   "Erzähle mir deine Lieblingsposition im Bett",
   "Küsse deinen besten Freund auf die Wange",
@@ -56,9 +58,9 @@ var wins = Array(
 );
 
 
-function basic() {
+function basic(partCount) {
   confetti({
-    particleCount: 10000,
+    particleCount: partCount,
     spread: 360,
     origin: { y: 0.6 },
     shapes: ["emoji"],
@@ -303,7 +305,7 @@ function message() {
 }
 
 function win(callback) {
-  basic();
+  basic(10000);
   setTimeout(() => {
     // Animation completed
     callback();
@@ -325,3 +327,17 @@ $(window).ready(function () {
 
 
 })
+
+
+function checkPassword() {
+    const passwordInput = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+    
+    if (passwordInput === correctPassword) {
+      basic(500);
+      document.getElementById('password-dialog').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    } else {
+        errorMessage.style.display = 'block';
+    }
+}
