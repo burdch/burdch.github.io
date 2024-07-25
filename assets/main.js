@@ -36,7 +36,9 @@ var wins = Array(
   "Verteil 3 Schlücke",
   "Vergib 3 Schlücke",
   "Lass {name} einen Schluck trinken",
-  "Zeig deine Brüste oder nimm einen Schluck"
+  "Zeig deine Brüste oder nimm einen Schluck",
+  "Ranke den Bodycount deiner Freundinnen. Trinke wenn du falsch liegst.",
+  "Wem traust du zu heute noch am Strand Sex zu haben.",
 );
 
 function basic(partCount) {
@@ -276,8 +278,8 @@ RouletteWheel.prototype.bindEvents = function () {
 
 function checkResponseForNameAndSubstitute(win){
   if (win.includes("{name}")) {
-    const randomName = participants[Math.floor(Math.random() * participants.length)];
-    const resultString = win.replace("{name}", randomName);
+    let randomName = participants[Math.floor(Math.random() * participants.length)];
+    let resultString = win.replace("{name}", randomName);
     return resultString;
   }
   // If no {name} tag is found, return the inputString unchanged
