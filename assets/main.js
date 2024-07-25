@@ -297,7 +297,7 @@ function message() {
 }
 
 function win(callback) {
-  basic(10000);
+  basic(1000);
   setTimeout(() => {
     // Animation completed
     callback();
