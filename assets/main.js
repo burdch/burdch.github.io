@@ -2,48 +2,41 @@ const correctPassword = 'malle';  //Wenn du das Passwort findest bist du ein kra
 
 var participants = Array(
   "Timo",
-  "Tobi",
-  "Male",
+  "Malte",
   "Ferdi",
   "Chris",
   "Sven",
 )
 
 var wins = Array(
-  "Erzähle mir deine Lieblingsposition im Bett",
+  "Erzähle deine Lieblingsposition im Bett",
   "Küsse deinen besten Freund auf die Wange",
-  "Einladung zu unserer Hausparty nächste Woche. (Bring eine heiße Freundin mit)",
   "Sag, wer der bestaussehende Typ in unserer Gruppe ist",
   "Was ist dein bester Anmachspruch?",
   "Was ist dein schlechtester Anmachspruch?",
-  "Trink von deinem Bier, wenn du jemanden aus unserer Gruppe heiß findest",
-  "Trink von deinem Bier, wenn du jemals einen One-Night-Stand hattest",
+  "Trink einen Schluck, wenn du jemals einen One-Night-Stand hattest",
   "Zeig uns deinen sexiesten Tanzmove",
   "Zeig dein bestes Flirt-Gesicht",
+  "Zeig dein bestes Flirt-Gesicht und lasse es von der Digi-Cam festhalten",
   "Zeig dein schlechtestes Flirt-Gesicht",
-  "Mach ein Selfie mit der Person, die du heute Abend am liebsten küssen würdest",
   "Enthülle den verrücktesten Ort, an dem du jemals Sex hattest",
   "Schicke eine flirtende Nachricht an deinen zuletzt gespeicherten Kontakt",
-  "Zeige uns dein verführerischstes Gesicht",
-  "Nimm einen Shot, wenn du jemals jemanden auf dieser Party geküsst hast",
-  "Mach ein Selfie mit dir und uns mit deinem Handy",
-  "Lass Tobi etwas auf deinen Arm zeichnen",
-  "Poste ein lustiges Selfie auf deiner Instagram-Story mit Sven",
-  "Gib Christian ein unvergessliches Kompliment",
+  "Trink einen Schluck, wenn du schon jemanden auf dieser Party geküsst hast",
+  "Mach ein Selfie mit dir und unserer Digi-Cam",
+  "Gib {name} ein unvergessliches Kompliment",
   "Fordere jemanden zu einem Daumenkrieg heraus, Verlierer trinkt",
   "Nimm einen Shot, wenn du jemals nackt baden warst",
   "Zeige dein bestes Duckface",
-  "Flüstere Sven ein Geheimnis zu",
-  "Erzähle die Geschichte deines schlimmsten Dates",
-  "Sag, mit wem du am liebsten auf einer einsamen Insel gestrandet wärst",
   "Stimm einen Malle-Hit an",
   "Benutze deinen besten Anmachspruch bei {name}",
   "Lass {name} ein Emoji aussuchen, das du in deiner nächsten Nachricht verwenden musst",
   "Sag etwas Nettes über {name}",
-  "Mach ein Selfie mit {name} mit deinem Handy",
-  "Lass {name} dir ein temporäres Tattoo mit einem Marker geben",
   "Gib {name} einen Klaps auf den Arsch",
-  "Lass {name} einen Spitznamen für dich aussuchen, den du für den Rest der Nacht verwenden musst",
+  "Zeig deinen besten Talahon-Move",
+  "Verteil 3 Schlücke",
+  "Vergib 3 Schlücke",
+  "Lass {name} einen Schluck trinken",
+  "Zeig deine Brüste oder nimm einen Schluck"
 );
 
 function basic(partCount) {
@@ -298,7 +291,7 @@ function message() {
   Notiflix.Confirm.show(
     '🎉DU HAST GEWONNEN🎉',
     response,
-    'Gerne',
+    'Nochmal',
   );
   // alert("🎉WE HAVE A WINNER🎉\nPrize: " + response);
 }
