@@ -164,6 +164,9 @@ body {
   font-size: 1.5em;
 }
 
+.roulette .triangle{
+}
+
 #password-dialog {
   font-family: 'Inter', sans-serif;
   position: fixed;
@@ -190,5 +193,11 @@ body {
 #main-content {
   display: none;
   padding: 20px;
+}
+
+.notiflix-confirm-head div{
+	font-size: 25px !important;
+	font-weight: bold !important;
+
 }
 
