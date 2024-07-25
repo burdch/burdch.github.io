@@ -165,6 +165,7 @@ body {
 }
 
 .roulette .triangle{
+	border-width: 1em 0 1em 2em;
 }
 
 #password-dialog {
