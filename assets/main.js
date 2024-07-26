@@ -16,7 +16,6 @@ var wins = Array(
   "Was ist dein schlechtester Anmachspruch?",
   "Trink einen Schluck, wenn du jemals einen One-Night-Stand hattest",
   "Zeig uns deinen sexiesten Tanzmove",
-  "Zeig dein bestes Flirt-Gesicht",
   "Zeig dein bestes Flirt-Gesicht und lasse es von der Digi-Cam festhalten",
   "Zeig dein schlechtestes Flirt-Gesicht",
   "Enthülle den verrücktesten Ort, an dem du jemals Sex hattest",
