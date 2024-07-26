@@ -278,7 +278,7 @@ RouletteWheel.prototype.bindEvents = function () {
 
 function checkResponseForNameAndSubstitute(win){
   if (win.includes("{name}")) {
-    let randomName = participants[Math.floor(Math.random() * participants.length)];
+    let randomName = participants[Math.floor(Math.random() * participants.length +1)];
     let resultString = win.replace("{name}", randomName);
     return resultString;
   }
