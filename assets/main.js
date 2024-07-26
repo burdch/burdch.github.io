@@ -38,7 +38,8 @@ var wins = Array(
   "Zeig deine Brüste oder nimm einen Schluck",
   "Ranke den Bodycount deiner Freundinnen. Trinke wenn du falsch liegst.",
   "Wem traust du zu heute noch am Strand Sex zu haben.",
-  "Gib deiner Freundin einen Klaps auf den Arsch."
+  "Gib deiner Freundin einen Klaps auf den Arsch.",
+  "Gib {name} einen Kuss auf die Wange"
 );
 
 function basic(partCount) {
