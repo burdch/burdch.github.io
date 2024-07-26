@@ -161,7 +161,7 @@ RouletteWheel.prototype.spin = function (_index) {
       //easing: [20, 7],
       //easing: [200, 20],
       easing: 'easeOutQuint',
-      duration: 8000,
+      duration: 6000,
       begin: $.proxy(_onAnimationBegin, this),
       complete: $.proxy(_onAnimationComplete, this)
     });
