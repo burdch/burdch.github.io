@@ -10,7 +10,7 @@ var participants = Array(
 
 var wins = Array(
   "Erzähle deine Lieblingsposition im Bett",
-  "Küsse deinen besten Freund auf die Wange",
+  "Küsse deinen Freund auf die Wange",
   "Sag, wer der bestaussehende Typ in unserer Gruppe ist",
   "Was ist dein bester Anmachspruch?",
   "Was ist dein schlechtester Anmachspruch?",
@@ -29,7 +29,6 @@ var wins = Array(
   "Zeige dein bestes Duckface",
   "Stimm einen Malle-Hit an",
   "Benutze deinen besten Anmachspruch bei {name}",
-  "Lass {name} ein Emoji aussuchen, das du in deiner nächsten Nachricht verwenden musst",
   "Sag etwas Nettes über {name}",
   "Gib {name} einen Klaps auf den Arsch",
   "Zeig deinen besten Talahon-Move",
@@ -39,6 +38,7 @@ var wins = Array(
   "Zeig deine Brüste oder nimm einen Schluck",
   "Ranke den Bodycount deiner Freundinnen. Trinke wenn du falsch liegst.",
   "Wem traust du zu heute noch am Strand Sex zu haben.",
+  "Gib deiner Freundin einen Klaps auf den Arsch."
 );
 
 function basic(partCount) {
@@ -278,7 +278,7 @@ RouletteWheel.prototype.bindEvents = function () {
 
 function checkResponseForNameAndSubstitute(win){
   if (win.includes("{name}")) {
-    let randomName = participants[Math.floor(Math.random() * participants.length +1)];
+    let randomName = participants[Math.floor(Math.random() * participants.length)];
     let resultString = win.replace("{name}", randomName);
     return resultString;
   }
