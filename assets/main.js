@@ -26,7 +26,6 @@ var wins = Array(
   "Fordere jemanden zu einem Daumenkrieg heraus, Verlierer trinkt",
   "Nimm einen Shot, wenn du jemals nackt baden warst",
   "Zeige dein bestes Duckface",
-  "Stimm einen Malle-Hit an",
   "Benutze deinen besten Anmachspruch bei {name}",
   "Sag etwas Nettes über {name}",
   "Gib {name} einen Klaps auf den Arsch",
