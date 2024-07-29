@@ -4,7 +4,7 @@ var participants = Array(
   "Timo",
   "Malte",
   "Sven"
-);
+)
 
 var wins = Array(
   "Wann hattest du das letzte Mal Sex?",
@@ -12,42 +12,41 @@ var wins = Array(
   "Glück gehabt - du hast ein freilos",
   "Tausch mit jemandem am Tisch einen Eiswürfel aus",
   "Wie kommst du am besten?",
-  "Was hast du für Vorlieben?",
+  "Was hast du für sexuelle Vorlieben?",
   "Von wem hast du das letzte Mal geträumt?",
   "Mit wem könntest du dir hier am ehesten was vorstellen?",
   "Der ausgefallenste Ort an dem du je Sex hattest?",
-  "hattest du schonmal einen dreier",
-  "Such Dir jemanden dem Du einen Zungenkuss gibst!",
+  "hattest du schonmal einen dreier? wenn nein, ex dein glas",
+  "Such Dir jemanden, dem Du einen Zungenkuss gibst!",
   "Schmeiß ne Runde Kurze",
   "Erzähle deine Lieblingsposition im Bett",
   "Küsse deinen Freund auf die Wange",
-  "Sag, wer der bestaussehende Typ in unserer Gruppe ist",
+  "Sag, wer der bestaussehende Typ in unserer Gruppe ist oder schneiß eine runde"
   "Was ist dein bester Anmachspruch?",
   "Was ist dein schlechtester Anmachspruch?",
   "Trink einen Schluck, wenn du jemals einen One-Night-Stand hattest",
-  "Zeig uns deinen sexiesten Tanzmove",
-  "Zeig dein bestes Flirt-Gesicht und lasse es von der Digi-Cam festhalten",
-  "Zeig dein schlechtestes Flirt-Gesicht",
-  "Enthülle den verrücktesten Ort, an dem du jemals Sex hattest",
-  "Schicke eine flirtende Nachricht an deinen zuletzt gespeicherten Kontakt",
+  "Zeig uns deinen sexiesten Tanzmove oder trinke",
+  "Zeig dein bestes Flirt-Gesicht und lasse es von Svens handy festhalten",
+  "Enthülle den verrücktesten Ort, an dem du jemals Sex hattest oder zieh ein kleidungsstück aus (socke zählt nicht)",
+  "Schicke eine flirtende Nachricht an deinen letzten chat",
   "Trink einen Schluck, wenn du schon jemanden auf dieser Party geküsst hast",
-  "Mach ein Selfie mit dir und unserer Digi-Cam",
+  "Mach ein Selfie mit dir und und svens handy",
   "Gib {name} ein unvergessliches Kompliment",
   "Fordere jemanden zu einem Daumenkrieg heraus, Verlierer trinkt",
-  "Nimm einen Shot, wenn du jemals nackt baden warst",
+  "Nimm einen Shot, wenn du jemals nackt baden warst, oder geh jetzt nackt baden",
   "Zeige dein bestes Duckface",
   "Benutze deinen besten Anmachspruch bei {name}",
-  "Sag etwas Nettes über {name}",
   "Gib {name} einen Klaps auf den Arsch",
   "Zeig deinen besten Talahon-Move",
   "Verteil 3 Schlücke",
   "Vergib 3 Schlücke",
   "Lass {name} einen Schluck trinken",
-  "Zeig deine Brüste oder nimm einen Schluck",
+  "Zeig deine Brüste oder nimm einen schluck (gilt such für männers)",
   "Ranke den Bodycount deiner Freundinnen. Trinke wenn du falsch liegst.",
-  "Wem traust du zu heute noch am Strand Sex zu haben.",
+  "Wem traust du zu, heute noch am Strand Sex zu haben.",
   "Gib deiner Freundin einen Klaps auf den Arsch.",
-  "Gib {name} einen Kuss auf die Wange"
+  "Gib {name} einen Kuss auf die Wange",
+  "Geh zu dem heißesten Typen oder Girl & frag mach der Nummer"
 );
 
 function basic(partCount) {
