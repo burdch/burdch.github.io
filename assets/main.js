@@ -4,7 +4,7 @@ var participants = Array(
   "Timo",
   "Malte",
   "Sven"
-)
+);
 
 var wins = Array(
   "Wann hattest du das letzte Mal Sex?",
