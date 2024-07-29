@@ -17,7 +17,7 @@ var wins = Array(
   "Mit wem könntest du dir hier am ehesten was vorstellen?",
   "Der ausgefallenste Ort an dem du je Sex hattest?",
   "hattest du schonmal einen dreier",
-  "Such Dir jemanden dem Du einen Zungenkuss gibst!,
+  "Such Dir jemanden dem Du einen Zungenkuss gibst!",
   "Schmeiß ne Runde Kurze",
   "Erzähle deine Lieblingsposition im Bett",
   "Küsse deinen Freund auf die Wange",
