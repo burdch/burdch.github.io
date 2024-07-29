@@ -3,12 +3,22 @@ const correctPassword = 'malle';  //Wenn du das Passwort findest bist du ein kra
 var participants = Array(
   "Timo",
   "Malte",
-  "Ferdi",
-  "Chris",
-  "Sven",
+  "Sven"
 )
 
 var wins = Array(
+  "Wann hattest du das letzte Mal Sex?",
+  "Bist du rasiert?",
+  "Glück gehabt - du hast ein freilos",
+  "Tausch mit jemandem am Tisch einen Eiswürfel aus",
+  "Wie kommst du am besten?",
+  "Was hast du für Vorlieben?",
+  "Von wem hast du das letzte Mal geträumt?",
+  "Mit wem könntest du dir hier am ehesten was vorstellen?",
+  "Der ausgefallenste Ort an dem du je Sex hattest?",
+  "hattest du schonmal einen dreier",
+  "Such Dir jemanden dem Du einen Zungenkuss gibst!,
+  "Schmeiß ne Runde Kurze",
   "Erzähle deine Lieblingsposition im Bett",
   "Küsse deinen Freund auf die Wange",
   "Sag, wer der bestaussehende Typ in unserer Gruppe ist",
