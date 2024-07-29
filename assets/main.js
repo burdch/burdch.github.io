@@ -21,9 +21,7 @@ var wins = Array(
   "Schmeiß ne Runde Kurze",
   "Erzähle deine Lieblingsposition im Bett",
   "Küsse deinen Freund auf die Wange",
-  "Sag, wer der bestaussehende Typ in unserer Gruppe ist oder schneiß eine runde"
-  "Was ist dein bester Anmachspruch?",
-  "Was ist dein schlechtester Anmachspruch?",
+  "Sag, wer der bestaussehende Typ in unserer Gruppe ist oder schneiß eine runde",
   "Trink einen Schluck, wenn du jemals einen One-Night-Stand hattest",
   "Zeig uns deinen sexiesten Tanzmove oder trinke",
   "Zeig dein bestes Flirt-Gesicht und lasse es von Svens handy festhalten",
