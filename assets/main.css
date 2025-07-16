@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 body {
   overflow: hidden;
-  background: #F8F8FA;
+  background: white;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ctext x='20' y='50' font-size='40' font-family='Arial, sans-serif'%3E🍺%3C/text%3E%3C/svg%3E");
+  background-size: 50px 50px;
+  background-repeat: repeat;
 }
 .roulette {
   font-family: 'Inter', sans-serif;
