@@ -1,9 +1,13 @@
-const correctPassword = 'malle';  //Wenn du das Passwort findest bist du ein krasser Hacker. Glückwunsch. 
-
-var participants = Array(
+var single_participants = Array(
   "Timo",
+  "Christian",
+  "Tobi"
+)
+
+var taken_participants = Array(
   "Malte",
-  "Sven"
+  "Sven",
+  "Ferdinand"
 )
 
 var wins = Array(
@@ -17,35 +21,40 @@ var wins = Array(
   "Mit wem könntest du dir hier am ehesten was vorstellen?",
   "Der ausgefallenste Ort an dem du je Sex hattest?",
   "hattest du schonmal einen dreier? wenn nein, ex dein glas",
-  "Such Dir jemanden, dem Du einen Zungenkuss gibst!",
-  "Schmeiß ne Runde Kurze",
-  "Erzähle deine Lieblingsposition im Bett",
+  "Such Dir jemanden, dem Du einen Zungenkuss gibst",
+  "Verrate deine Lieblingsposition im Bett",
   "Küsse deinen Freund auf die Wange",
-  "Sag, wer der bestaussehende Typ in unserer Gruppe ist oder schneiß eine runde",
+  "Sag, wer der bestaussehende Typ in unserer Gruppe ist oder schmeiß eine Runde",
   "Trink einen Schluck, wenn du jemals einen One-Night-Stand hattest",
   "Zeig uns deinen sexiesten Tanzmove oder trinke",
-  "Zeig dein bestes Flirt-Gesicht und lasse es von Svens handy festhalten",
-  "Enthülle den verrücktesten Ort, an dem du jemals Sex hattest oder zieh ein kleidungsstück aus (socke zählt nicht)",
-  "Schicke eine flirtende Nachricht an deinen letzten chat",
+  "Zeig dein bestes Flirt-Gesicht",
+  "Enthülle den verrücktesten Ort, an dem du jemals Sex hattest oder zieh ein Kleidungsstück aus (Socke zählt nicht)",
+  "Schicke eine flirtende Nachricht an deinen letzten Chat",
   "Trink einen Schluck, wenn du schon jemanden auf dieser Party geküsst hast",
-  "Mach ein Selfie mit dir und und svens handy",
+  "Mach ein Selfie mit dir und {name}",
   "Gib {name} ein unvergessliches Kompliment",
   "Fordere jemanden zu einem Daumenkrieg heraus, Verlierer trinkt",
-  "Nimm einen Shot, wenn du jemals nackt baden warst, oder geh jetzt nackt baden",
+  "Nimm einen Shot, wenn du jemals nackt baden warst",
   "Zeige dein bestes Duckface",
   "Benutze deinen besten Anmachspruch bei {name}",
   "Gib {name} einen Klaps auf den Arsch",
-  "Zeig deinen besten Talahon-Move",
   "Verteil 3 Schlücke",
   "Vergib 3 Schlücke",
   "Lass {name} einen Schluck trinken",
-  "Zeig deine Brüste oder nimm einen schluck (gilt such für männers)",
+  "Zeig deine Brüste oder nimm einen Schluck (gilt such für Männers)",
   "Ranke den Bodycount deiner Freundinnen. Trinke wenn du falsch liegst.",
   "Wem traust du zu, heute noch am Strand Sex zu haben.",
   "Gib deiner Freundin einen Klaps auf den Arsch.",
   "Gib {name} einen Kuss auf die Wange",
-  "Geh zu dem heißesten Typen oder Girl & frag mach der Nummer"
+  "Geh zu dem heißesten Typen oder Girl & frag nach der Nummer",
+  "Gratuliere Sven zum 18ten Geburtstag (er kommt nicht damit klar, dass er jetzt alt ist)",
 );
+
+// Keep track of available wins (copy of original wins array)
+var availableWins = [...wins];
+
+// Default fallback message when all wins are used
+var defaultWin = "Alle Aufgaben wurden bereits gespielt! Zeit für eine neue Runde oder eigene Ideen! 🎉";
 
 function basic(partCount) {
   confetti({
@@ -293,13 +302,28 @@ function checkResponseForNameAndSubstitute(win){
 }
 
 function message() {
-  let response = wins[Math.floor(Math.random() * wins.length)];
+  let response;
+  
+  // Check if there are still available wins
+  if (availableWins.length > 0) {
+    // Get random index from available wins
+    let randomIndex = Math.floor(Math.random() * availableWins.length);
+    // Get the response
+    response = availableWins[randomIndex];
+    // Remove the used response from available wins
+    availableWins.splice(randomIndex, 1);
+  } else {
+    // All wins have been used, use default fallback
+    response = defaultWin;
+  }
+  
   response = checkResponseForNameAndSubstitute(response);
+  
   console.log(response);
   Notiflix.Confirm.show(
     '🎉DU HAST GEWONNEN🎉',
     response,
-    'Nochmal',
+    'Gib das Handy an die nächste Person weiter',
   );
   // alert("🎉WE HAVE A WINNER🎉\nPrize: " + response);
 }
@@ -327,17 +351,3 @@ $(window).ready(function () {
 
 
 })
-
-
-function checkPassword() {
-    const passwordInput = document.getElementById('password').value;
-    const errorMessage = document.getElementById('error-message');
-    
-    if (passwordInput === correctPassword) {
-      basic(500);
-      document.getElementById('password-dialog').style.display = 'none';
-      document.getElementById('main-content').style.display = 'block';
-    } else {
-        errorMessage.style.display = 'block';
-    }
-}
