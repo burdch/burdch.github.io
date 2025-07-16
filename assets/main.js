@@ -1,7 +1,6 @@
 var single_participants = Array(
   "Timo",
-  "Christian",
-  "Tobi"
+  "Christian"
 )
 
 var taken_participants = Array(
